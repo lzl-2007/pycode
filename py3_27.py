@@ -109,7 +109,8 @@ print(torch.mm(z12,w12))#矩阵与矩阵
 print(torch.matmul(z12,w12))#同上
 
 print("13.")
-x13=torch.tensor([1.0,2,3],requires_grad=True)
-y13=(x13*2).sum()
+x13=torch.tensor([2.,3,4],requires_grad=True)
+y13=(x13**3).sum()
 y13.backward()
 print(x13.grad)
+
